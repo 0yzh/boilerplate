@@ -25,6 +25,7 @@ const nunjucksHTML = Nunjucks.render('index.html', { n: 1 });
  * @ htmlString - defined above
  * @ fs.writeFile - writes the nunjucks html string to the file path specified in htmlPath
  */
+/* not used for this version
 const fm = new Freemarker();
 function renderData(nj, filePath) {
   fm.render(nj, { Country: 'US' }, (err, result) => {
@@ -40,3 +41,4 @@ function renderData(nj, filePath) {
 }
 
 renderData(nunjucksHTML, htmlPath);
+*/
