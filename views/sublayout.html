@@ -1,0 +1,38 @@
+{%- extends './base_layout.html' %}
+
+{# images #}
+{%- set gum = "https://services.google.com/fh/files/emails/" -%}
+{%- set img_logo = gum ~ "floral_super_g_pixel_logo_84x28_2x.png" -%}
+
+
+{%- block email_content %}
+  <table class="container" dir="{{ dir }}" align="center" bgcolor="#ffffff" cellpadding="0" cellspacing="0"> 
+  
+    <!-- masthead -->
+    {%- block masthead -%}
+      <tr>
+        <td class="masthead">
+          <a href="#">
+            <img src="{{ img_logo }}" alt="Google Pixel" width="84" height="28" />
+          </a> 
+        </td>
+      </tr>
+    {%- endblock masthead -%}
+
+    <!-- content module -->
+    {%- block email_partials %}
+      Use ../index.html
+    {%- endblock email_partials %}
+
+    <!-- support module -->
+    {%- block support -%}
+      {# empty for now #}
+    {%- endblock support -%}
+
+    <!-- footer module -->
+    {%- block footer -%}
+      {# empty for now #}
+    {%- endblock footer -%}
+
+  </table>
+{%- endblock email_content %} 
