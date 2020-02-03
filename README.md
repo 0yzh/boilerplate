@@ -75,7 +75,7 @@ Layouts and modular components can be added to the `views` folder.
 // jinja data
 const htmlString = nunjucks.render('index.html', { n: 1 });
 
-// freemarker data
+// freemarker data | NOTE: FREEMARKER IS NOT INCLUDED FOR THIS VERSION
 fm.render(nj, { Country: 'US' }, (err, result) => {});
 ```
 
