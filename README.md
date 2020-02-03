@@ -56,7 +56,7 @@ This will generate a two new folders inside `prod`:
 Layouts and modular components can be added to the `views` folder.
 
 - Base layout example:
-  ![alt text](https://drive.google.com/file/d/1Qo1vU8cDe5_uhx0STJsMiyOchOHvIVKI/view 'base layout')
+  ![alt text](https://screenshot.googleplex.com/VVRHVPKJdDB.png 'base layout')
 
 - Sublayout example:
   ![alt text](https://drive.google.com/file/d/137oe93KBWZAIRnlEEIqwtfbzONQ1Inki/view 'base layout')
