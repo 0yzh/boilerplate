@@ -19,6 +19,12 @@ const htmlPath = './stage/index.html';
 Nunjucks.configure('.');
 const nunjucksHTML = Nunjucks.render('index.html', { n: 1 });
 
+fs.writeFile(htmlPath, htmlString, err => {
+  return err
+    ? console.log(`Error saving file: See exception (${err})`)
+    : console.log('The file was saved successfully!');
+});
+
 /**
  * handle Nunjucks and Freemarker data rendering
  * @ htmlPath - defined above
@@ -39,6 +45,5 @@ function renderData(nj, filePath) {
     });
   });
 }
-
 renderData(nunjucksHTML, htmlPath);
 */
