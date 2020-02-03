@@ -19,7 +19,7 @@ Start by:
 - Clone this repo:
 
 ```shell
-git clone https://github.com/0yzh/email-dev.git
+git clone https://github.com/0yzh/prod.git
 ```
 
 ## Install dependencies
