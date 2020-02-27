@@ -27,8 +27,7 @@ git clone https://github.com/0yzh/boilerplate.git
 On the command line, navigate to the newly created `boilerplate` folder and run npm install:
 
 ```shell
-cd prod
-npm install
+cd boilerplate && npm install
 ```
 
 Next, start the npm dev script. This will monitor any changes you make to `src/index.html` and automatically run the build process `npm run build`.
