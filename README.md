@@ -24,7 +24,7 @@ git clone https://github.com/0yzh/boilerplate.git
 
 ## Install dependencies
 
-On the command line, navigate to the newly create `boilerplate` folder and run npm install:
+On the command line, navigate to the newly created `boilerplate` folder and run npm install:
 
 ```shell
 cd prod
