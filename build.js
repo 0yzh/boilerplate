@@ -15,7 +15,7 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 let fileContents = fs.readFileSync('./src/copy/en-US.yml', 'utf8');
-let data = yaml.load(fileContents, { json: true });
+let data = yaml.load(fileContents);
 
 // console.log(data);
 // console.log(data['email-1'].features['feature-1']);
