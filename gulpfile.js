@@ -13,10 +13,10 @@ const inlineCss = require('gulp-inline-css');
  * @ build - compiles a final version of index.html from ./stage/ and outputs it into ./build/
  * @ all string arguments can be modified as needed
  */
-gulp.task('build', function() {
+gulp.task('build', function () {
   return gulp
-    .src('./stage/*.html')
+    .src('./src/stage/*.html')
     .pipe(premailer())
     .pipe(inlineCss({ preserveMediaQueries: true }))
-    .pipe(gulp.dest('build/'));
+    .pipe(gulp.dest('./src/build/'));
 });

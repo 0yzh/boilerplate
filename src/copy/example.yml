@@ -1,0 +1,146 @@
+# Email 1: 14 days remaining
+email-1:
+  subject: 'Enjoying the new Nest Aware?'
+  preheader: 'Make the most of event video history, intelligent alerts, and more'
+
+  hero:
+    headline: 'You have 14 days left with the new Nest Aware.'
+    body: 'Do you like Nest Aware so far? Subscribe today to keep your video history. It costs just {{price}} a month and covers all your Nest cameras, speakers, and displays.{{sup1}}'
+    body-row: 'Do you like Nest Aware so far? Subscribe today to keep your video history. It costs just {{price}} a month and covers all your Nest cameras.{{sup1}}'
+    cta_text: 'Subscribe'
+
+  features:
+    headline: 'Here’s how you can use the new Nest Aware:{{sup2}}'
+    cta_overline: 'You won’t be charged until your free trial ends.'
+    cta_text: 'Subscribe'
+    feature-1:
+      headline: 'Record and review video history.'
+      body: 'See what you missed with 30 days of event-based video history. Your devices start recording when they detect motion or sound, so you always know what’s happening around the house.'
+    feature-2:
+      headline: 'Know when a package arrives.'
+      body: 'Get an alert when Nest Hello detects a package has been dropped off.'
+    feature-3:
+      headline: 'Use sound detection.'
+      body: 'You’ll get a notification when your Nest cameras or displays pick up certain sounds, like a dog barking or glass breaking.{{sup3}}'
+    feature-4:
+      headline: 'Get intelligent alerts.'
+      body: 'Person alerts let you know when your Nest cameras spot someone in the house. Create Activity Zones around important areas, like the living room or front door, and get alerted on your phone when something happens there.{{sup4}}'
+
+  nest-aware-plus-banner:
+    headline: 'Catch everything with 24/7 video history.'
+    body: 'Get continuous video recording with Nest Aware Plus, so you can see everything before, after, and during an event. You’ll also get 60 days of event video history, which is 30 more days than the standard Nest Aware subscription. Subscribe for just {{price}} a month.'
+    cta_text: 'Subscribe'
+
+  footnotes:
+    footnote-1: '{{sup1}}Includes all Nest cameras, speakers, and displays in the same home.'
+    footnote-2: '{{sup2}}Some features, including mobile notifications, remote control, video streaming and video recording, require working internet and Wi-Fi.'
+    footnote-3: '{{sup3}}Glass breaking sound detection only works for speakers and displays. Dog barking sound detection only works for Nest Cams and Nest Hub Max.'
+    footnote-4: '{{sup4}}Only available with Nest Cams, Nest Hello video doorbell, and Nest Hub Max.'
+
+    footnote-row-1: '{{sup1}}Includes all Nest cameras in the same home.'
+    footnote-row-2: '{{sup2}}Some features, including mobile notifications, remote control, video streaming and video recording, require working internet and Wi-Fi.'
+    footnote-row-3: '{{sup3}}Only available with Nest Cams, Nest Hello video doorbell, and Nest Hub Max.'
+    footnote-row-3-alt-1: '{{sup3}}Only available with Nest Cams.'
+    footnote-row-3-alt-2: '{{sup3}}Only available with Nest Cams and Nest Hub Max.'
+    footnote-row-3-alt-3: '{{sup3}}Only available with Nest Cams and Nest Hello.'
+
+# Email 2: 5 days remaining
+email-2:
+  subject: 'Your new Nest Aware trial is about to expire'
+  preheader: 'Have you checked out your video history?'
+
+  hero:
+    headline: 'Only 5 days left in your free trial of the new Nest Aware.'
+    body: 'Your free trial is about to expire. A monthly subscription is just {{price}} and covers all your Nest cameras, speakers, and displays.{{sup1}}'
+    body-row: 'Your free trial is about to expire. A monthly subscription is just {{price}} and covers all your Nest cameras.{{sup1}}'
+    cta_text: 'Subscribe'
+
+  features:
+    subhead: 'Have you checked out Nest Aware yet?'
+    subhead-body: 'If not, you’re missing out on these helpful features:{{sup2}}'
+    cta_text: 'Subscribe'
+    feature-1:
+      headline: 'Event clips.'
+      body: 'When Nest devices detect motion or sound, they start recording event clips. Get up to 30 days of footage and easily share clips.'
+    feature-2:
+      headline: 'Person alerts.'
+      body: 'Get a special alert on your phone when your Nest cameras or Nest Hub Max detect someone around your home.'
+      body-alt: 'Get a special alert on your phone when your Nest cameras detect someone around your home.'
+    feature-3:
+      headline: 'Activity Zones.'
+      body: 'Create Activity Zones around areas you care about and choose which alerts you’ll get on your phone when something happens there.{{sup3}}'
+    feature-4:
+      headline: 'Sound detection.'
+      body: 'Your Nest speakers and displays will alert you when glass breaks or your smoke alarm goes off.'
+
+  nest-aware-plus-banner:
+    headline: 'See even more with 24/7 video history.'
+    body: 'Nest Aware Plus records continuously, so you can scan through your entire video history. It costs just {{price}} a month to subscribe.'
+    cta_text: 'Subscribe'
+
+  footnotes:
+    footnote-1: '{{sup1}}Includes all Nest cameras, speakers, and displays in the same home.'
+    footnote-2: '{{sup2}}Some features, including mobile notifications, remote control, video streaming and video recording, require working internet and Wi-Fi.'
+    footnote-3: '{{sup3}}Only available with Nest Cams, Nest Hello video doorbell, and Nest Hub Max.'
+
+    footnote-row-1: '{{sup1}}Includes all Nest cameras in the same home.'
+    footnote-row-2: '{{sup2}}Some features, including mobile notifications, remote control, video streaming and video recording, require working internet and Wi-Fi.'
+    footnote-row-3: '{{sup3}}Only available with Nest Cams and Nest Hello video doorbell.'
+    footnote-row-3-alt-1: '{{sup3}}Only available with Nest Cams.'
+    footnote-row-3-alt-2: '{{sup3}}Only available with Nest Cams and Nest Hub Max.'
+    footnote-row-3-alt-3: '{{sup3}}Only available with Nest Cams and Nest Hello.'
+
+# Email 3: 0 days remaining
+email-3:
+  subject: 'Your trial of the new Nest Aware expires today'
+  preheader: 'Subscribe to keep your video history'
+
+  hero:
+    headline: 'Sign up today to keep your new Nest Aware going.'
+    body: 'If you subscribe today, you’ll still have access to your video history and intelligent alerts.{{sup1}} Subscriptions start at just {{price}} a month for all your compatible devices.{{sup2}}'
+    cta_text: 'Subscribe'
+
+  nest-aware-plus-banner:
+    headline: 'Stay in the know with 24/7 video history.'
+    body: 'For only {{price}} a month, you can subscribe to Nest Aware Plus. You get 10 days of continuous video history and 60 days of event-based recording – so you never miss a thing.'
+    cta_text: 'Subscribe'
+
+  footnotes:
+    footnote-1: '{{sup1}}Some features, including mobile notifications, remote control, video streaming and video recording, require working internet and Wi-Fi.'
+    footnote-2: '{{sup2}}Includes all Nest cameras, speakers, and displays in the same home.'
+
+    footnote-row-1: '{{sup1}}Some features, including mobile notifications, remote control, video streaming and video recording, require working internet and Wi-Fi.'
+    footnote-row-2: '{{sup2}}Includes all Nest cameras in the same home.'
+
+# Email 4: 10 days past
+email-4:
+  subject: 'Get the new Nest Aware'
+  preheader: 'It’s not too late to subscribe'
+
+  hero:
+    headline: 'Sign up for Nest Aware to take control of your security.'
+    body: 'It’s been a little while since your free trial ended. But you can still get the new Nest Aware for just {{price}} a month.'
+
+  plan-breakdown:
+    headline: 'You have two subscription options:'
+    cta_text: 'Subscribe'
+
+    plan-1:
+      headline: 'Nest Aware:'
+      body: 'At {{price}} a month, the new Nest Aware covers all your Nest cameras, speakers, and displays.{{sup1}} You get 30 days of event-based video history and alerts that matter.'
+    plan-2:
+      headline: 'Nest Aware Plus:'
+      body: 'For {{price}} a month, you can see it all with Nest Aware Plus. You’ll still get intelligent alerts{{sup2}}, and you’ll also get 60 days of event clips for your whole home and 10 days of 24/7 video history.'
+
+    plan-1-alt:
+      headline: 'Nest Aware:'
+      body: 'At {{price}} a month, the new Nest Aware covers all your Nest cameras.{{sup1}} You get 30 days of event-based video history and alerts that matter.'
+    plan-2-alt:
+      headline: 'Nest Aware Plus:'
+      body: 'For {{price}} a month, you can see it all with Nest Aware Plus. You’ll still get intelligent alerts{{sup2}}, and you’ll also get 60 days of event clips for your whole home and 10 days of 24/7 video history.'
+
+  footnotes:
+    footnote-1: '{{sup1}}Includes all Nest cameras, speakers, and displays in the same home.'
+    footnote-2: '{{sup2}}Some features, including mobile notifications, remote control, video streaming and video recording, require working internet and Wi-Fi.'
+    footnote-row-1: '{{sup1}}Includes all Nest cameras in the same home.'
+    footnote-row-2: '{{sup2}}Some features, including mobile notifications, remote control, video streaming and video recording, require working internet and Wi-Fi.'

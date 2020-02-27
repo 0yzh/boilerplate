@@ -1,0 +1,33 @@
+{%- extends './layout/sublayout.html' %}
+
+{# set image server #}
+{%- set gum = "https://services.google.com/fh/files/emails/" -%}
+{%- set img_hero = gum ~ "floral_preorder_mod1_hero_720x280_2x_factor_revision.png" -%}
+{%- set m1_img = gum ~ "pixel_holiday_shopping_m1_hero_720x440_2x.jpg" -%}
+{%- set img_spacer = gum ~ "spacer.png" -%}
+
+{# import macro library base #}
+{%- import './partial/macro_base.html' as base %}
+
+{%- block email_partials %}
+<tr>
+  <td class="m-1" background="{{m1_img}}">
+    <table>
+      {{ base.spacer(25) }}
+      <tr>
+        <td class="copy h1 bold">
+          <h1>{{ data.mod1_headline }}</h1>
+        </td>
+      </tr>
+      {{ base.spacer(14) }}
+      <tr>
+        <td class="copy p">
+          <p>{{ data.subhead }}</p>
+        </td>
+      </tr>
+      {{ base.text(data.optout) }}
+      {{ base.spacer(25) }}
+    </table>
+  </td>
+</tr>
+{%- endblock %}

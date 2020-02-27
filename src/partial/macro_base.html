@@ -1,0 +1,56 @@
+{# add macros here #} 
+
+{%- macro spacer(height, class, colspan="1", mso_show=true) %}
+  {# Used to create vertical space between elements.
+    Arguments:
+      height: Integer or String. Defines the height of the spacer.
+      class: String. Adds this value to the class="" attribute of the <td>.
+      langs: Sequence. Element will only show if the current language is included in this sequence. If blank/undefined, element will show for all languages.
+      gamma_condition: String. Outputs this value into the Freemarker <#if> below.
+    Updated: @huyb 4/10/19
+  #}
+  {% if mso_show == false %}
+    <!--[if !mso]-->
+  {% endif %}
+
+  {% if class != "" %}
+    <tr>
+      <td style="font-size:{{ height }}px;line-height:{{ height }}px;padding:0;" colspan="{{ colspan|default('1') }}" height="{{ height }}" class="{{ class }}">
+        &nbsp;
+      </td>
+    </tr>
+  {% else %}
+    <tr>
+      <td style="font-size:{{ height }}px;line-height:{{ height }}px;padding: 0;" colspan="{{ colspan|default('1') }}" height="{{ height }}">
+        &nbsp;
+      </td>
+    </tr>
+  {% endif %}
+    
+  {% if mso_show == false %}
+    <!--[endif]-->
+  {% endif %}
+{%- endmacro %}
+
+{% macro text(copy, class, link, copy_align, element="p") %}
+  {# Used to create a semantic text element
+    Arguments:
+      copy: Sequence or String. All content to be displayed in the module.
+      class: String. Adds this value to the class="" attribute of the containing <td>.
+      link:
+      langs: Sequence. Element will only show if the current language is included in this sequence. If blank/undefined, element will show for all lanaguges.
+      gamma_condition: String. Outputs this value into the Freemarker <#if> below.
+    Updated: @huyb 4/10/19
+  #}
+  <tr>
+    <td class="copy {{ element }} {{ class }}" align="{{ copy_align|default('center') }}">
+      <{{ element }}>
+        {% if link is defined and link != "" %}
+          <a href="{{ link }}">{{ copy }}</a>
+        {% else %}
+          {{ copy }}
+        {% endif %}
+      </{{ element }}>
+    </td>
+  </tr>
+{% endmacro %}
