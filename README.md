@@ -35,7 +35,7 @@ Next, start the npm dev script. This will monitor any changes you make to `src/i
 ```shell
 npm run dev
 ```
-This puts the terminal into a 'watch' state, preventing additional terminal commands. Use Control + C to exit this mode.
+**Note:** This puts the terminal into a 'watch' state, preventing additional terminal commands. Use Control + C to exit this mode.
 
 ## Development
 
