@@ -30,7 +30,7 @@ On the command line, navigate to the newly created `boilerplate` folder and run 
 cd boilerplate && npm install
 ```
 
-Next, start the npm dev script. This will monitor any changes you make to `src/index.html` and automatically run the build process `npm run build`.
+Next, start the npm dev script. This will monitor any changes you make to `src/index.html` and any files `src/less/*.less` then automatically run the build process `npm run build` when changes are detected.
 
 ```shell
 npm run dev
