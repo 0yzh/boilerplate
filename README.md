@@ -31,7 +31,7 @@ cd prod
 npm install
 ```
 
-Alternatively you can just run:
+Next, start the npm dev script. This will monitor any changes you make to `src/index.html` and automatically run
 
 ```shell
 npm start
@@ -43,9 +43,11 @@ Which will start the app and also install the dependencies.
 
 You can add your development phase HTML in `index.html` located on the src folder level `boilerplate/src/index.html` file and LESS in the: `boilerplate/src/styles.less` file.
 
-When you're ready to compile, run this command: `npm run build`
+When you're ready to compile, simply saving changes to your `src/index.html` file should trigger a build process automatically if npm dev script is running (`npm run dev`).
 
-This will generate a two new folders inside `src`:
+If did not start the dev script and want to manually compile your builds, run this command each time you want to build the final html: `npm run build`
+
+Once the build process is complete there will be two new files created `src`:
 
 - `stage` contains the compiled nunjucks and LESS->CSS files.
 
@@ -63,7 +65,7 @@ Layouts and modular components can be added to the `layout` folder.
 
 - You can add macros to the `partial` folder and import into `src/index.html` as normal:
   ```jinja
-    {% import ".src/partial/macro_base" as base %}
+    {% import "src/partial/macro_base" as base %}
   ```
 
 ## Data
