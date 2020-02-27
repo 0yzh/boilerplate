@@ -43,7 +43,7 @@ Which will start the app and also install the dependencies.
 
 You can add your development phase HTML in `index.html` located on the src folder level `boilerplate/src/index.html` file and LESS in the: `boilerplate/src/styles.less` file.
 
-When you're ready to compile, simply saving changes to your `src/index.html` file should trigger a build process automatically if npm dev script is running (`npm run dev`).
+When you're ready to compile, simply saving changes to your `src/index.html` file should trigger a build process automatically if npm dev script is running `npm run dev`.
 
 If did not start the dev script and want to manually compile your builds, run this command each time you want to build the final html: `npm run build`
 
