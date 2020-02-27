@@ -39,7 +39,7 @@ This puts the terminal into a 'watch' state, preventing additional terminal comm
 
 ## Development
 
-You can add your development phase HTML in `index.html` located on the src folder level `boilerplate/src/index.html` file and LESS in the: `boilerplate/src/styles.less` file.
+You can add your development phase HTML in `index.html` located on the src folder level `boilerplate/src/index.html` file and LESS in the: `boilerplate/src/less/styles.less` file.
 
 When you're ready to compile, simply saving changes to your `src/index.html` file should trigger a build process automatically if the npm dev script is running: `npm run dev`.
 
