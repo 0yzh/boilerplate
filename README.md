@@ -49,7 +49,7 @@ Once the build process is complete there will be two new subfolders created in t
 
 - `stage` contains the compiled nunjucks and LESS->CSS files.
 
-- `build` contains the final HTML with rendered nunjucks data and inlined CSS / -premailer styles: `boilerplate/src/build/index.html`. **This is the final HTML code you will copy and paste into your Gamma message.**
+- `build` contains the final HTML with rendered nunjucks data and inlined CSS / -premailer styles: `boilerplate/src/build/index.html`. **This is the HTML code you will copy and paste into your Gamma message.**
 
 ## Using layouts and partials
 
