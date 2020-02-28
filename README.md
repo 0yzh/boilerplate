@@ -62,15 +62,14 @@ You can add macros to the `partial/macro_base.html` file and import them into `s
 ```jinja
   {% import "./partial/macro_base" as base %}
 ```
-- Calling the macro:
+Calling the macro:
 ```jinja
   {{ base.spacer(25) }}
 ```
 
 ## Data
 
-- Data is passed through this method:
-
+Data is passed through this method:
 ```js
 // Code can be found in the 'build.js' file
 // jinja data
