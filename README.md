@@ -77,7 +77,7 @@ Data is passed through this method:
 const nunjucksHTML = Nunjucks.render('./src/index.html', {
   n: 1,
   data: data
-});```
+});
 
 // freemarker data | NOTE: FREEMARKER IS NOT INCLUDED FOR THIS VERSION
 fm.render(nj, { Country: 'US' }, (err, result) => {});
