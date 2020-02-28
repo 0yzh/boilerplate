@@ -37,7 +37,6 @@ const nunjucksHTML = Nunjucks.render('./src/index.html', {
  * @ escapeHTML - helper function to run on rendered nunjucksHTML string
  * @ fs.writeFile - writes the nunjucks html string to the file path specified in htmlPath
  */
-
 const htmlEscapes = {
   '&amp;': '&',
   '&lt;': '<',
