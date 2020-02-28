@@ -72,7 +72,7 @@ Calling the macro:
 
 Data is passed through this method:
 ```js
-//Code can be found in the 'build.js' file
+// Code can be found in the 'build.js' file
 const nunjucksHTML = Nunjucks.render('./src/index.html', {
   n: 1,
   copy: data
@@ -86,14 +86,17 @@ The copy var object is parsed from the yaml file `copy/en-us.yaml` and passed to
 # My email name
 from: 'Test <noreply@gmail.com>'
 subject: 'This is a subject line'
-mod1_headline: This is a headline for mod 1
-mod1_subhead: This is a subhead for mod 1
-mod1_cta: Call to action
+headline: This is a headline for mod 1
+subhead: This is a subhead for mod 1
+cta: Call to action
 ```
 You would call each copy like this:
 ```shell
+{{ copy.from }}
 {{ copy.subject }}
 {{ copy.headline }}
+{{ copy.subhead }}
+{{ copy.cta }}
 ```
 
 # WIP...
