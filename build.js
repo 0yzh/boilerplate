@@ -28,7 +28,7 @@ const htmlPath = './src/stage/index.html';
 Nunjucks.configure('.');
 const nunjucksHTML = Nunjucks.render('./src/index.html', {
   n: 1,
-  data: data
+  copy: data
 });
 
 /**
