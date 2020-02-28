@@ -55,16 +55,16 @@ Once the build process is complete there will be two new subfolders created in t
 
 Layouts can be found in `src/layout` which contains `base_layout.html` and `sublayout.html` by default. Layout files can be extended as normal:
 ```jinja
-  {%- extends './layout/sublayout.html' %}
+{%- extends './layout/sublayout.html' %}
 ```
 
 You can add macros to the `partial/macro_base.html` file and import them into `src/index.html` as normal:
 ```jinja
-  {% import "./partial/macro_base" as base %}
+{% import "./partial/macro_base" as base %}
 ```
 Calling the macro:
 ```jinja
-  {{ base.spacer(25) }}
+{{ base.spacer(25) }}
 ```
 **Note:** This boilerplate only includes two macros (text and vertical spacer) which are commonly used. Additional macros can be added to `partial/macro_base.html`.
 
@@ -75,12 +75,25 @@ Data is passed through this method:
 //Code can be found in the 'build.js' file
 const nunjucksHTML = Nunjucks.render('./src/index.html', {
   n: 1,
-  data: data
+  copy: data
 });
 
 // freemarker data | NOTE: FREEMARKER IS NOT INCLUDED FOR THIS VERSION
 fm.render(nj, { Country: 'US' }, (err, result) => {});
 ```
-The copy var object is parsed from the yaml file `copy/en-us.yaml` and passed to `src/index.html`. It must be called as 'data' i.e: `{{ data.subject }}` since it is passed it as 'data'. If you wish to call the object as something else such as 'copy', you must change it in this function first.
+The copy var object is parsed from the yaml file `copy/en-us.yaml` and passed to `src/index.html` as 'copy'. For example if your yaml file looks like this:
+```yaml
+# My email name
+from: 'Test <noreply@gmail.com>'
+subject: 'This is a subject line'
+mod1_headline: This is a headline for mod 1
+mod1_subhead: This is a subhead for mod 1
+mod1_cta: Call to action
+```
+You would call each copy like this:
+```shell
+{{ copy.subject }}
+{{ copy.headline }}
+```
 
 # WIP...
