@@ -66,6 +66,7 @@ Calling the macro:
 ```jinja
   {{ base.spacer(25) }}
 ```
+**Note:** This boilerplate only includes two macros (text and vertical spacer) which are commonly used. Additional macros can be added to `partial/macro_base.html`.
 
 ## Data
 
