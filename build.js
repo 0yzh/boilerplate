@@ -17,10 +17,6 @@ const yaml = require('js-yaml');
 let fileContents = fs.readFileSync('./src/copy/en-US.yml', 'utf8');
 let data = yaml.load(fileContents);
 
-// console.log(data);
-// console.log(data['email-1'].features['feature-1']);
-// let { headline } = data['email-1'].features['feature-1'];
-
 /**
  * @ htmlPath - file path that we want to output the staging html file
  * @ htmlPath/index.html - this is the same file gulp will use to run inline-css and premailer
@@ -35,6 +31,13 @@ const nunjucksHTML = Nunjucks.render('./src/index.html', {
   data: data
 });
 
+/**
+ * @ htmlEscapes - list of HTML escape characters
+ * @ htmlEscaper - regex pattern containing the keys listed immediately above in htmlEscapes
+ * @ escapeHTML - helper function to run on rendered nunjucksHTML string
+ * @ fs.writeFile - writes the nunjucks html string to the file path specified in htmlPath
+ */
+
 const htmlEscapes = {
   '&amp;': '&',
   '&lt;': '<',
@@ -44,7 +47,6 @@ const htmlEscapes = {
   '&#x2F;': '/'
 };
 
-// Regex containing the keys listed immediately above.
 const htmlEscaper = /(&amp;)|(&lt;)|(&gt;)|(&quot;)|(&#x27;)|(&#x2F;)/ig;
 
 const escapeHTML = string => {
@@ -58,26 +60,3 @@ fs.writeFile(htmlPath, escapeHTML(nunjucksHTML), err => {
     ? console.log(`Error saving file: See exception (${err})`)
     : console.log('The file was saved successfully!');
 });
-
-/**
- * handle Nunjucks and Freemarker data rendering
- * @ htmlPath - defined above
- * @ htmlString - defined above
- * @ fs.writeFile - writes the nunjucks html string to the file path specified in htmlPath
- */
-/* not used for this version
-const fm = new Freemarker();
-function renderData(nj, filePath) {
-  fm.render(nj, { Country: 'US' }, (err, result) => {
-    if (err) {
-      console.log(Error(err));
-    }
-    fs.writeFile(filePath, result, err => {
-      return err
-        ? console.log(`Error saving file: See exception (${err})`)
-        : console.log('The file was saved successfully!');
-    });
-  });
-}
-renderData(nunjucksHTML, htmlPath);
-*/
