@@ -43,7 +43,7 @@ You can add your development phase HTML in `index.html` located on the src folde
 
 When you're ready to compile, simply saving changes to your `src/index.html` file should automatically trigger a build process if the npm dev script is running: `npm run dev`.
 
-If did not start the dev script and want to manually compile your builds, run this command each time you want to build the final html: `npm run build`
+If you did not start the dev script and want to manually compile your builds, run this command each time you want to build the final html: `npm run build`
 
 Once the build process is complete there will be two new files created `src`:
 
