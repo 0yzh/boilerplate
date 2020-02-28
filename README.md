@@ -72,8 +72,7 @@ Calling the macro:
 
 Data is passed through this method:
 ```js
-// Code can be found in the 'build.js' file
-// Nunjucks data
+//Code can be found in the 'build.js' file
 const nunjucksHTML = Nunjucks.render('./src/index.html', {
   n: 1,
   data: data
@@ -82,5 +81,6 @@ const nunjucksHTML = Nunjucks.render('./src/index.html', {
 // freemarker data | NOTE: FREEMARKER IS NOT INCLUDED FOR THIS VERSION
 fm.render(nj, { Country: 'US' }, (err, result) => {});
 ```
+The copy var object is parsed from the yaml file `copy/en-us.yaml` and passed to index.html. It must be called as 'data' i.e: {{ data.subject }} since it is passed it as 'data'. If you wish to call the object as something else such as 'copy', you must change it in this function first.
 
 # WIP...
