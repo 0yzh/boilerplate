@@ -45,7 +45,7 @@ When you're ready to compile, simply saving changes to your `src/index.html` fil
 
 If you did not start the dev script and want to manually compile your builds, run this command each time you want to build the final html: `npm run build`
 
-Once the build process is complete there will be two new files created `src`:
+Once the build process is complete there will be two new files created in the `src` folder:
 
 - `stage` contains the compiled nunjucks and LESS->CSS files.
 
