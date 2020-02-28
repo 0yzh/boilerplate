@@ -68,6 +68,10 @@ You can add macros to the `partial/macro_base.html` file and import them into `s
 ```jinja
   {% import "./partial/macro_base" as base %}
 ```
+- Calling the macro:
+  ```jinja
+    {{ base.spacer(25) }}
+  ```
 
 ## Data
 
