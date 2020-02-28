@@ -73,8 +73,11 @@ Calling the macro:
 Data is passed through this method:
 ```js
 // Code can be found in the 'build.js' file
-// jinja data
-const nunjucksHTML = nunjucks.render('index.html', { n: 1 });
+// Nunjucks data
+const nunjucksHTML = Nunjucks.render('./src/index.html', {
+  n: 1,
+  data: data
+});```
 
 // freemarker data | NOTE: FREEMARKER IS NOT INCLUDED FOR THIS VERSION
 fm.render(nj, { Country: 'US' }, (err, result) => {});
