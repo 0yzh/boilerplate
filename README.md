@@ -77,9 +77,9 @@ The copy var object is parsed from the yaml file `copy/en-us.yaml` and passed to
 # My email name
 from: 'Test <noreply@gmail.com>'
 subject: 'This is a subject line'
-headline: This is a headline for mod 1
-subhead: This is a subhead for mod 1
-cta: Call to action
+headline: 'This is a headline'
+subhead: 'This is a subhead'
+cta: 'Call to action'
 ```
 You would call each copy like this:
 ```shell
