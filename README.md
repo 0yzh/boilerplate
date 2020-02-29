@@ -59,9 +59,9 @@ Calling the macro:
 ```
 **Note:** This boilerplate only includes two macros (text and vertical spacer) which are commonly used. Additional macros can be added to `partial/macro_base.html`.
 
-## Data
+## Adding and using body copy
 
-Data is passed through this method:
+Body copy data is passed through this method:
 ```js
 // Code can be found in the 'build.js' file
 const nunjucksHTML = Nunjucks.render('./src/index.html', {
