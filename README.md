@@ -72,7 +72,7 @@ const nunjucksHTML = Nunjucks.render('./src/index.html', {
 // freemarker data | NOTE: FREEMARKER IS NOT INCLUDED FOR THIS VERSION
 fm.render(nj, { Country: 'US' }, (err, result) => {});
 ```
-The copy var object is parsed from the yaml file `copy/en-us.yml` and passed to `src/index.html` as 'copy'. For example if your yaml file looks like this:
+The copy var object is parsed from the yaml file `copy/en-us.yml` and passed to `src/index.html` as 'copy'. So for example if your yaml file looks like this:
 ```yaml
 # My email name
 from: 'Test <noreply@gmail.com>'
