@@ -10,14 +10,7 @@ sudo gem install premailer
 
 ## Getting started
 
-Start by:
-
-- Creating a new project folder.
-
-- Navigate to the new folder directory in the terminal / CLI.
-
-- Clone this repo:
-
+Start by cloning this repo to your local machine.
 ```shell
 git clone https://github.com/0yzh/boilerplate.git
 ```
@@ -25,13 +18,11 @@ git clone https://github.com/0yzh/boilerplate.git
 ## Install dependencies
 
 On the command line, navigate to the newly created `boilerplate` folder and run npm install:
-
 ```shell
 cd boilerplate && npm install
 ```
 
 Next, start the npm dev script. This will monitor any changes you make to `src/index.html` or to any files in `src/less/` and automatically run the build process `npm run build` when changes are detected.
-
 ```shell
 npm run dev
 ```
