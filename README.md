@@ -21,6 +21,7 @@ On the command line, navigate to the newly created `boilerplate` folder and run 
 ```shell
 cd boilerplate && npm install
 ```
+**Note:** You can rename the `boilerplate` directory to a different name that's more relevant to your email project.
 
 Next, start the npm dev script. This will monitor any changes you make to `src/index.html` or to any files in `src/less/` and automatically run the build process `npm run build` when changes are detected.
 ```shell
