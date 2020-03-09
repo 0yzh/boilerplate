@@ -10,7 +10,7 @@ const inlineCss = require('gulp-inline-css');
 
 /**
  * set task
- * @ build - compiles a final version of index.html from ./stage/ and outputs it into ./src/build/
+ * @ build - compiles a final version of index.html from ./src/stage/ and outputs it into ./src/build/
  * @ all string arguments can be modified as needed
  */
 gulp.task('build', function() {
