@@ -51,6 +51,7 @@ const copyDirPath = './src/copy';
 const copyData = [];
 const localHTML = [];
 const pt = [];
+const langs = [];
 
 fs.readdir(copyDirPath, async (err, files) => {
   // handling error
@@ -58,16 +59,21 @@ fs.readdir(copyDirPath, async (err, files) => {
     console.log(`Unable to scan directory: ${err.message}`);
   }
 
-  // loop through all files and add contents to arrays: copyData, localHTML, pt
-  const langs = [];
+  // loop through all files and add contents to arrays: copyData, localHTML, pt, langs
   await files.forEach(file => {
     const yamlData = fs.readFileSync(`${copyDirPath}/${file}`, 'utf8');
     const localCopy = yaml.safeLoad(yamlData);
-    langs.push(file.replace('.yml', ''));
+    const langName = file.replace('.yml', '');
+    langs.push(langName);
     copyData.push(localCopy);
     const html = Nunjucks.render(`./src/index.html`, {
       n: '${manage_prefs()}',
       copy: localCopy,
+      env: {
+        language: {
+          short_name: langName
+        }
+      }
     });
     const textData = Nunjucks.render(`./src/plain.html`, {
       copy: localCopy

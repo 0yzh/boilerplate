@@ -11,22 +11,22 @@
     "less": "lessc ./src/less/styles.less ./src/stage/styles.css",
     "start": "echo export 'JAVA_HOME=$(/usr/libexec/java_home)' >> ~/.bash_profile && npm install",
     "build": "npm run less && node build.js && gulp build-html && gulp build-pt && gulp compile",
-    "export": "gulp zip"
+    "export": "gulp export"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "less": "^3.10.3",
+    "less": "^3.11.1",
     "onchange": "^6.1.0"
   },
   "dependencies": {
     "freemarker": "^2.1.0",
     "gulp": "^4.0.2",
-    "gulp-inline-css": "^3.4.0",
+    "gulp-inline-css": "^3.5.0",
     "gulp-premailer": "^0.4.0",
     "js-yaml": "^3.13.1",
-    "nunjucks": "^3.2.0",
+    "nunjucks": "^3.2.1",
     "path": "^0.12.7",
     "zip-a-folder": "0.0.12"
   }

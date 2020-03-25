@@ -9,7 +9,6 @@ const premailer = require('gulp-premailer');
 const inlineCss = require('gulp-inline-css');
 const fs = require('fs');
 const { zip } = require('zip-a-folder');
-const path = require('path');
 
 /**
  * set task
@@ -58,11 +57,11 @@ gulp.task('compile', async () => {
   });
 });
 
-gulp.task('zip', async () => {
+gulp.task('export', async () => {
   class zipDir {
     static async main() {
-      await zip('./src/build', '../archive.zip');
-      console.log(`Zip file is located in dir: './../archive.zip'`)
+      await zip('./src/build', `../${process.env.EXPORT_NAME || 'archive'}.zip`);
+      console.log(`Zip file is located in dir: './../${process.env.EXPORT_NAME || 'archive'}.zip'`)
     }
   }
   zipDir.main();
