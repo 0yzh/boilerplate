@@ -6,10 +6,12 @@
   "scripts": {
     "watch:less": "onchange './src/less/*.less' -- npm run build",
     "watch:html": "onchange './src/*.html' -- npm run build",
+    "watch:plain-text": "onchange './src/plain.html' -- npm run build",
     "dev": "npm run watch:html & npm run watch:less",
     "less": "lessc ./src/less/styles.less ./src/stage/styles.css",
     "start": "echo export 'JAVA_HOME=$(/usr/libexec/java_home)' >> ~/.bash_profile && npm install",
-    "build": "npm run less && node build.js && gulp build"
+    "build": "npm run less && node build.js && gulp build-html && gulp build-pt && gulp compile",
+    "export": "gulp zip"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +27,7 @@
     "gulp-premailer": "^0.4.0",
     "js-yaml": "^3.13.1",
     "nunjucks": "^3.2.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "zip-a-folder": "0.0.12"
   }
 }

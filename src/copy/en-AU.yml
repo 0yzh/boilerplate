@@ -2,8 +2,8 @@
 from: 'Google Pixel <googlepixel-noreply@google.com>'
 subject: >-
   <#if FirstName?? && FirstName?has_content && FirstName?length gt 1>${FirstName?capitalize}, w<#else>W</#if>elcome to your new Pixel
-preview_copy: 'Get started in 3 easy steps.'
-mod1_headline: 'Welcome to the most <br/>helpful Pixel yet.'
+preview_copy: '[AU] Get started in 3 easy steps.'
+mod1_headline: '[AU] Welcome to the most <br/>helpful Pixel yet.'
 mod1_subhead: >-
   Get the most out of your new Pixel 4 <br/>right from day one. Start with these quick <br/>pointers for finding apps, using gestures, <br/>and more.
 mod2_headline: 'Hear it first.'
@@ -44,8 +44,8 @@ support_cta:
   - Get answers
 hats_headline: 'Was this email helpful?'
 disclaimer:
-  - '&sup1; Requires internet connection.'
+  - '[AU] &sup1; Requires internet connection.'
   - '&sup2; PLACEHOLDER COPY'
   - '&sup3; PLACEHOLDER COPY'
 google_address: &copy; ${.now?string('yyyy')} G&#65279;oo&#65279;gle L&#65279;LC<br />16&#8203;0&#65279;0 A&#65279;m&#65279;p&#65279;h&#65279;ith&#8203;eatre Park&#8203;way,<br />Moun&#8203;tain Vie&#8203;w, CA 94&#8203;043
-optout: 'You are receiving this welcome message because you recently activated your Google account on a&nbsp;Pixel.'
+optout: '[AU] You are receiving this welcome message because you recently activated your Google account on a&nbsp;Pixel.'

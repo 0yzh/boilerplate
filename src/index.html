@@ -11,8 +11,8 @@
 
 {%- block email_partials %}
 <tr>
-  <td class="m-1" background="{{m1_img}}">
-    <table>
+  <td class="m-1 container" background="{{m1_img}}">
+    <table class="container">
       {{ base.spacer(25) }}
       <tr>
         <td class="copy h1 bold">
@@ -26,7 +26,41 @@
         </td>
       </tr>
       {{ base.spacer(14) }}
-      {{ base.text(copy.optout) }}
+      <tr>
+        <td class="copy h1">
+          <a href="${call_d}">
+            <h1>HERO CTA</h1>
+          </a>
+        </td>
+      </tr>
+      {{ base.spacer(14) }}
+      <tr>
+        <td class="copy h1">
+          <a href="${help_center}">
+            <h1>CTA 1</h1>
+          </a>
+        </td>
+      </tr>
+      {{ base.spacer(14) }}
+      <tr>
+        <td class="copy h1">
+          <a href="${call_m}">
+            <h1>CTA 2</h1>
+          </a>
+        </td>
+      </tr>
+      {{ base.spacer(14) }}
+      <tr>
+        <td class="copy h1">
+          <a href="{{ n }}">
+            <h1>CTA 3</h1>
+          </a>
+        </td>
+      </tr>
+      {{ base.spacer(14) }}
+      {{ base.text(copy.disclaimer[0], element="h5") }}
+      {{ base.spacer(14) }}
+      {{ base.text(copy.optout, element="h5") }}
       {{ base.spacer(14) }}
       {{ base.text(copy.google_address, element="h5") }}
       {{ base.spacer(25) }}
