@@ -76,8 +76,13 @@ fs.readdir(copyDirPath, async (err, files) => {
       }
     });
     const textData = Nunjucks.render(`./src/plain.html`, {
-      copy: localCopy
-    })
+      copy: localCopy,
+      env: {
+        language: {
+          short_name: langName
+        }
+      }
+    });
     pt.push(textData);
     localHTML.push(html);
   });
