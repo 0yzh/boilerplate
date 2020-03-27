@@ -50,6 +50,7 @@ const copyDirPath = './src/copy';
 // LOCALIZED DATA
 const copyData = [];
 const localHTML = [];
+const lpHTML = [];
 const pt = [];
 const langs = [];
 
@@ -67,12 +68,21 @@ fs.readdir(copyDirPath, async (err, files) => {
     langs.push(langName);
     copyData.push(localCopy);
     const html = Nunjucks.render(`./src/index.html`, {
-      n: '${manage_prefs()}',
       copy: localCopy,
       env: {
         language: {
           short_name: langName
-        }
+        },
+        content_type: 'email'
+      }
+    });
+    const lpData = Nunjucks.render(`./src/landing.html`, {
+      copy: localCopy,
+      env: {
+        language: {
+          short_name: langName
+        },
+        content_type: 'landing_page'
       }
     });
     const textData = Nunjucks.render(`./src/plain.html`, {
@@ -80,11 +90,13 @@ fs.readdir(copyDirPath, async (err, files) => {
       env: {
         language: {
           short_name: langName
-        }
+        },
+        content_type: 'plaintext'
       }
     });
     pt.push(textData);
     localHTML.push(html);
+    lpHTML.push(lpData);
   });
 
   // loop through html and plain-text content and write files to staging folder ./src/stage
@@ -94,6 +106,12 @@ fs.readdir(copyDirPath, async (err, files) => {
       return err
         ? console.log(`Error saving file: See exception (${err.message})`)
         : console.log(`The ${langs[i]} file was saved successfully!`);
+    });
+    // landing page
+    fs.writeFile(`./src/stage/Default.${langs[i]}.lp.html`, lpHTML[i], err => {
+      return err
+        ? console.log(`Error saving file: See exception (${err.message})`)
+        : console.log(`The ${langs[i]} landing page file was saved successfully!`);
     });
     // plain text
     fs.writeFile(`./src/stage/Default.${langs[i]}.txt`, escapeHTML(pt[i]), err => {

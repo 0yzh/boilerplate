@@ -1,0 +1,51 @@
+# Google Pixel(Floral) Welcome
+from: 'Google Pixel <googlepixel-noreply@google.com>'
+subject: >-
+  <#if FirstName?? && FirstName?has_content && FirstName?length gt 1>${FirstName?capitalize} 様、<#else></#if>新しい Google Pixel へようこそ
+preview_copy: '3 つの簡単なステップではじめよう。'
+mod1_headline: 'これまでになく便利な<br/>Google Pixel へようこそ。'
+mod1_subhead: >-
+  新しい Google Pixel 4 を<br/>初日から使いこなす。アプリの検索、ジェスチャーの利用などについて<br/>以下のクイックガイドで<br/>ご確認いただけます。
+mod2_headline: 'いち早くお知らせ。'
+mod2_subhead: >-
+  Google のハードウェア製品、<span class=\"mobile\"><br/></span>関連する機能、サービス、各種特典についての最新情報を<span class=\"mobile\"><br/></span>メールでお届けします。<span class=\"desktop\"><br/></span>Google の<span class=\"mobile\"><br/></span>ハードウェア製品と<span class=\"mobile\"><br/></span>関連サービスの改善へのご協力のお願いもお送りします。
+mod2_cta: 'お申し込みはこちら'
+mod3_headline: '役立つヒントにすばやくアクセスする。'
+mod3_subhead:
+  - スマートフォンのサイレント モード、<br/>通知のカスタマイズ、Google アシスタント&sup1;の<br/>使用について学べる便利な動画をご覧ください。
+  - ご利用の Google Pixel に関するヒントを見る:<br/><strong>[設定] > [ヒントとサポート] > [Pixel の使い方・ヒント]</strong>
+mod3_cta: 'YouTube でヒントを見る'
+mod4_tips:
+  - 初めての方への基本事項
+  - ホーム画面の管理
+  - スマートフォンのロックとロック解除
+  - Wi-Fi ネットワークへの接続
+  - スマートフォンの充電
+  - 位置情報のオンとオフ
+  - 顔認証
+  - データの設定と転送
+  - メッセージへの切り替え
+mod4_headline: 'その他の Google Pixel 使用のヒント。'
+mod5_headline: '使い慣れたアプリを<br/>見つける。&sup2;'
+mod5_subhead: Google Play ストアで<br/>お気に入りのアプリ、ゲーム、映画、テレビ番組、<br/>本、雑誌、音楽などを探せます。
+mod5_cta: 'アプリを探す'
+mod6_headline: '簡単にお支払い。'
+mod6_subhead: >-
+  オンラインでも店舗でも<span class=\"mobile\"><br/></span>Google Pixel なら Google Pay で<span class=\"desktop\"><br/></span>素早く安全に<span class=\"mobile\"><br/></span>お支払いできます。&sup3;
+mod6_cta: 'Google Pay を起動'
+gstore_headline: 'Google ファミリー製品。一緒に使ってもっと便利に。'
+gstore_subhead: >-
+  今すぐご購入いただけます。製品選びでサポートが必要な場合は<span class=\"mobile\"><br/></span>、<span class=\"mobile\"><br/><br/></span><strong>1 (8&#65279;33) 52&#65279;9-664&#65279;4 までお問い合わせください。</strong>
+gstore_cta: 'Google ストアにアクセス'
+support_headline: サポートについては 2&#65279;4&#65279;/&#65279;7 までお問い合わせください。
+support_cta:
+  - 発信
+  - チャット
+  - 調べ物をする
+hats_headline: 'このメールはお役に立ちましたか。'
+disclaimer:
+  - '&sup1; インターネット接続が必要です。'
+  - '&sup2; コンテンツによっては有料会員登録が必要な場合があります。'
+  - '&sup3; コンテンツによっては有料会員登録が必要な場合があります。'
+google_address: &copy; ${.now?string('yyyy')} G&#65279;oo&#65279;gle L&#65279;LC<br />16&#8203;0&#65279;0 A&#65279;m&#65279;p&#65279;h&#65279;ith&#8203;eatre Park&#8203;way,<br />Moun&#8203;tain Vie&#8203;w, CA 94&#8203;043
+optout: 'このウェルカム メッセージは、最近 Google Pixel で Google アカウントを有効にした方にお送りしています。'

@@ -37,10 +37,14 @@ gulp.task('compile', async () => {
     if (err) {
       console.log(`Unable to scan directory: ${err.message}`);
     }
-    // we only want html files here
+
+    // we only want html files here - also filtering out landing page files
     const htmlFiles = files.filter(el => /\.html$/.test(el))
-    // do something with your files, by the way they are just filenames...
+      .filter(el => /\.lp.html$/.test(el) !== true);
+
+    // log the file names
     console.log(htmlFiles)
+
     // loop through html files in directory and prepend freemarker links
     htmlFiles.forEach(async htmlFile => {
       const originalFile = `./src/build/${htmlFile}`;

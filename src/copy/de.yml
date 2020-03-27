@@ -1,0 +1,51 @@
+# Google Pixel(Floral) Welcome
+from: 'Google Pixel <googlepixel-noreply@google.com>'
+subject: >-
+  <#if FirstName?? && FirstName?has_content && FirstName?length gt 1>${FirstName?capitalize}, d<#else>D</#if>ein neues Pixel sagt Hallo.
+preview_copy: 'Kinderleicht einrichten – in drei einfachen Schritten'
+mod1_headline: 'Das bisher hilfreichste Pixel aller Zeiten.<br/>Jetzt in deiner Hand.'
+mod1_subhead: >-
+  Damit du schon ab dem ersten Tag<br/>das Beste aus deinem Pixel 4 herausholst, siehst du dir am besten diese einfachen Tipps an. <br/>Dann weißt du im Handumdrehen, <br/>wie du Apps suchst oder dein Pixel mithilfe von Gesten steuerst.
+mod2_headline: 'Neuigkeiten aus erster Hand'
+mod2_subhead: >-
+  Mit unseren E-Mails halten wir dich immer über Hardwareprodukte von Google <span class=\"mobile\"><br/></span>und die damit verbundenen Funktionen, Dienste <span class=\"mobile\"><br/></span>und Angebote auf dem Laufenden. <span class=\"desktop\"><br/></span>Außerdem laden wir dich ein, <span class=\"mobile\"><br/></span>uns bei der Optimierung von Geräten und den dazugehörigen <span class=\"mobile\"><br/></span>Diensten zu helfen.
+mod2_cta: 'Jetzt starten'
+mod3_headline: 'Hilfreiche Tipps in Sekundenschnelle'
+mod3_subhead:
+  - In unseren hilfreichen Videos erfährst du, wie du <br/>dein Smartphone stummschaltest, Benachrichtigungen anpasst und <br/>Google Assistant&sup1; verwendest.
+  - Sieh dir die Tipps direkt auf deinem Pixel an:<br/><strong>Einstellungen > Tipps & Support > Pixel-Tipps ansehen</strong>
+mod3_cta: 'Tipps auf YouTube ansehen'
+mod4_tips:
+  - Grundlagen
+  - Deinen Startbildschirm organisieren
+  - Dein Smartphone sperren und entsperren
+  - Verbindung zum WLAN herstellen
+  - Dein Smartphone laden
+  - Standortdienste aktivieren und deaktivieren
+  - Face Unlock
+  - Einrichten und Daten übertragen
+  - Zu Messages wechseln
+mod4_headline: 'Mehr Pixel-Tipps'
+mod5_headline: 'Finde deine <br/>vertrauten Apps&sup2;'
+mod5_subhead: Lade Apps, Spiele, Filme, Sendungen, <br/>Bücher, Zeitschriften und Musik ganz einfach<br/>aus dem Google Play Store herunter.
+mod5_cta: 'Deine Apps finden'
+mod6_headline: 'Bezahlen leicht gemacht'
+mod6_subhead: >-
+  Mit <span class=\"mobile\"><br/></span>Google Pay <span class=\"desktop\"> auf <span class=\"desktop\"><br/></span>deinem Pixel kannst du schnell und sicher <span class=\"mobile\"><br/></span>bezahlen – online oder im Geschäft&sup3;.
+mod6_cta: 'Google Pay öffnen'
+gstore_headline: 'Eine Produktfamilie für alles, was dir wichtig ist'
+gstore_subhead: >-
+  Hol dir jetzt dein neues Pixel. Du kannst dich noch nicht entscheiden? Unsere Experten <span class=\"mobile\"><br/></span>stehen dir mit Rat und Tat zur Seite. <span class=\"mobile\"><br/><br/></span><strong>Du erreichst uns unter 1 (8&#65279;33) 52&#65279;9-664&#65279;4.</strong>
+gstore_cta: 'Zum Google Store'
+support_headline: Wir helfen dir gerne weiter, 2&#65279;4&#65279;/&#65279;7.
+support_cta:
+  - Anrufen
+  - Chat
+  - Antworten erhalten
+hats_headline: 'War diese E-Mail hilfreich?'
+disclaimer:
+  - '&sup1; Internetverbindung erforderlich'
+  - '&sup2; Eventuell ist der Abschluss von Abos erforderlich.'
+  - '&sup3; Eventuell ist der Abschluss von Abos erforderlich.'
+google_address: &copy; ${.now?string('yyyy')} G&#65279;oo&#65279;gle L&#65279;LC<br />16&#8203;0&#65279;0 A&#65279;m&#65279;p&#65279;h&#65279;ith&#8203;eatre Park&#8203;way,<br />Moun&#8203;tain Vie&#8203;w, CA 94&#8203;043, USA
+optout: 'Du erhältst diese Willkommensnachricht, weil du dein Google-Konto vor Kurzem auf einem Pixel aktiviert hast.'
