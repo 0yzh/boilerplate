@@ -16,9 +16,9 @@ const yaml = require('js-yaml');
 const env = Nunjucks.configure('./src', { autoescape: false });
 const copyDirPath = './src/copy';
 
-const testHTML = fs.readFileSync('./src/index.html').toString();
-const testLP = fs.readFileSync('./src/landing.html').toString();
-const testPT = fs.readFileSync('./src/plain.html').toString();
+const _HTML = fs.readFileSync('./src/index.html').toString();
+const _LP = fs.readFileSync('./src/landing.html').toString();
+const _PT = fs.readFileSync('./src/plain.html').toString();
 
 // LOCALIZED DATA
 const copyData = [];
@@ -36,7 +36,7 @@ fs.readdir(copyDirPath, async (err, files) => {
       const langName = file.replace('.yml', '');
       langs.push(langName);
       copyData.push(localCopy);
-      const html = Nunjucks.compile(testHTML, env).render({
+      const html = Nunjucks.compile(_HTML, env).render({
         copy: localCopy,
         env: {
           language: {
@@ -45,7 +45,7 @@ fs.readdir(copyDirPath, async (err, files) => {
           }
         }
       });
-      const lpData = Nunjucks.compile(testLP, env).render({
+      const lpData = Nunjucks.compile(_LP, env).render({
         copy: localCopy,
         env: {
           language: {
@@ -54,7 +54,7 @@ fs.readdir(copyDirPath, async (err, files) => {
           }
         }
       });
-      const textData = Nunjucks.compile(testPT, env).render({
+      const textData = Nunjucks.compile(_PT, env).render({
         copy: localCopy,
         env: {
           language: {

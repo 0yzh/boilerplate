@@ -65,10 +65,15 @@ Calling the macro:
 Body copy data is passed through this method:
 ```js
 // Code can be found in the 'build.js' file
-const nunjucksHTML = Nunjucks.render('./src/index.html', {
-  n: 1,
-  copy: data
-});
+const html = Nunjucks.compile(_HTML, env).render({
+  copy: localCopy,
+  env: {
+    language: {
+      short_name: langName,
+      content_type: 'email'
+    }
+  }
+})
 
 // freemarker data | NOTE: FREEMARKER IS NOT INCLUDED FOR THIS VERSION
 fm.render(nj, { Country: 'US' }, (err, result) => {});
