@@ -31,7 +31,7 @@ npm run dev
 
 ## Development
 
-You can add your development phase HTML in `index.html` located on the src folder level `boilerplate/src/index.html` and LESS in the: `boilerplate/src/less/styles.less` file.
+You can add your development phase html code in `index.html` located on the src folder level `boilerplate/src/index.html` and LESS in the: `boilerplate/src/less/styles.less` file.
 
 When you're ready to compile, simply saving changes to your html or less files should automatically trigger a build process if the npm dev script is running: `npm run dev`.
 
@@ -47,12 +47,12 @@ Once the build process is complete there will be two new subfolders created in t
 
 Layouts can be found in `src/layout` which contains `base_layout.html` and `sublayout.html` by default. Layout files can be extended as normal:
 ```jinja
-{%- extends './layout/sublayout.html' %}
+{%- extends 'layout/sublayout.html' %}
 ```
 
 You can add macros to the `partial/macro_base.html` file and import them into `src/index.html` as normal:
 ```jinja
-{% import "./partial/macro_base" as base %}
+{% import "partial/macro_base" as base %}
 ```
 Calling the macro:
 ```jinja
