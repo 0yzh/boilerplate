@@ -31,7 +31,7 @@ npm run dev
 
 ## Development
 
-You can add your development phase html code in `index.html` located on the src folder level `boilerplate/src/index.html` and LESS in the: `boilerplate/src/less/styles.less` file.
+You can add your development phase HTML code in `index.html` located on the src folder level `boilerplate/src/index.html` and LESS in the: `boilerplate/src/less/styles.less` file.
 
 When you're ready to compile, simply saving changes to your html or less files should automatically trigger a build process if the npm dev script is running: `npm run dev`.
 
