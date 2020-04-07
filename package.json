@@ -25,6 +25,7 @@
     "gulp": "^4.0.2",
     "gulp-inline-css": "^3.5.0",
     "gulp-premailer": "^0.4.0",
+    "gulp-smoosher": "0.0.9",
     "js-yaml": "^3.13.1",
     "nunjucks": "^3.2.1",
     "path": "^0.12.7",

@@ -1,4 +1,4 @@
-{%- extends './layout/sublayout.html' %}
+{%- extends 'layout/sublayout.html' %}
 
 {# set image server #}
 {%- set gum = "https://services.google.com/fh/files/emails/" -%}
@@ -7,11 +7,11 @@
 {%- set img_spacer = gum ~ "spacer.png" -%}
 
 {# import macro library base #}
-{%- import './partial/macro_base.html' as base %}
+{%- import 'partial/macro_base.html' as base with context %}
 
 {%- block email_partials %}
   <tr>
-    <td class="m-1 container" background="">
+    <td class="m-1 container" background="{{ img_hero }}">
       <table class="container">
         {{ base.spacer(25) }}
         {{ base.text(copy.mod1_headline, element="h1", class="bold") }}
@@ -21,7 +21,8 @@
       </table>
     </td>
   </tr>
-  {{ base.spacer(20) }}
+  {{ base.spacer(20)}}
+  
   <tr>
     <td class="footer container" background="">
       <table class="container">

@@ -8,18 +8,25 @@ const gulp = require('gulp');
 const premailer = require('gulp-premailer');
 const inlineCss = require('gulp-inline-css');
 const fs = require('fs');
+const smoosher = require('gulp-smoosher');
 const { zip } = require('zip-a-folder');
 
 /**
- * set task
- * @ build - compiles a final version of index.html from ./src/stage/ and outputs it into ./src/build/
- * @ all string arguments can be modified as needed
+ * set build tasks
+ * @ build-html - compiles a final version of index.html from ./src/stage/ and outputs it into ./src/build/
+ * @ build-pt - same as build-html but for .txt files
  */
 gulp.task('build-html', () => {
   return gulp
     .src('./src/stage/*.html')
-    .pipe(premailer())
-    .pipe(inlineCss({ preserveMediaQueries: true }))
+    .pipe(smoosher())
+    .pipe(inlineCss({
+      preserveMediaQueries: true,
+      codeBlocks: {
+        HTML: { start: '<#', end: '>' },
+        FM: { start: '</#', end: '>' }
+      }
+    }))
     .pipe(gulp.dest('./src/build/'));
 });
 
@@ -29,7 +36,11 @@ gulp.task('build-pt', () => {
     .pipe(gulp.dest('./src/build/'));
 });
 
-
+/**
+ * set compiler task
+ * @ compile - loops through all files in staging folder and filter out html files excluding LPs
+ * @ build-pt - same as build-html but for .txt files
+ */
 gulp.task('compile', async () => {
   const linksFile = './src/partial/links.ftl';
   await fs.readdir('./src/build', (err, files) => {

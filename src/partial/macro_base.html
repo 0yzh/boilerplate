@@ -1,6 +1,6 @@
 {# add macros here #} 
 
-{%- macro spacer(height, class, colspan="1", mso_show=true) %}
+{%- macro spacer(height, langs, gamma_condition, class, colspan="1", mso_show=true) %}
   {# Used to create vertical space between elements.
     Arguments:
       height: Integer or String. Defines the height of the spacer.
@@ -9,6 +9,13 @@
       gamma_condition: String. Outputs this value into the Freemarker <#if> below.
     Updated: @huyb 4/10/19
   #}
+  {% set lang_var = "'" ~ env.language.short_name|lower ~ "'" %}
+  {% if langs %}
+    <#if {{ langs|lower }}?seq_contains({{ lang_var }})>
+  {% endif %}
+  {% if gamma_condition %}
+    <#if {{ gamma_condition }}>
+  {% endif %}
   {% if mso_show == false %}
     <!--[if !mso]-->
   {% endif %}
@@ -30,9 +37,15 @@
   {% if mso_show == false %}
     <!--[endif]-->
   {% endif %}
+  {% if gamma_condition %}
+    </#if>
+  {% endif %}
+  {% if langs %}  
+    </#if>
+  {% endif %}
 {%- endmacro %}
 
-{% macro text(copy, class, link, copy_align, element="p") %}
+{% macro text(copy, langs, gamma_condition, class, link, copy_align, element="p") %}
   {# Used to create a semantic text element
     Arguments:
       copy: Sequence or String. All content to be displayed in the module.
@@ -42,6 +55,13 @@
       gamma_condition: String. Outputs this value into the Freemarker <#if> below.
     Updated: @huyb 4/10/19
   #}
+  {% set lang_var = "'" ~ env.language.short_name|lower ~ "'" %}
+  {% if langs %}
+    <#if {{ langs|lower }}?seq_contains({{ lang_var }})>
+  {% endif %}
+  {% if gamma_condition %}
+    <#if {{ gamma_condition }}>
+  {% endif %}
   <tr>
     <td class="copy {{ element }} {{ class }}" align="{{ copy_align|default('center') }}">
       <{{ element }}>
@@ -53,4 +73,10 @@
       </{{ element }}>
     </td>
   </tr>
+  {% if gamma_condition %}
+    </#if>
+  {% endif %}
+  {% if langs %}  
+    </#if>
+  {% endif %}
 {% endmacro %}
