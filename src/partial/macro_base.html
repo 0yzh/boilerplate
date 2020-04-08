@@ -297,7 +297,7 @@
         <table align="{{ table_align }}" class="{{ table_class }}" width="{{ width }}" bgcolor="{{ bgcolor }}" cellpadding="0" cellspacing="0">
           <tr>
             <td class="{{ class }} module" valign="top" background="{{ bg_img }}">
-              {% if bg_img and defined and bg_img|trim != "" and mso_support == true %}
+              {% if bg_img and mso_support == true %}
                 <!--[if gte mso 9]>
                 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:{{ width }}px;height:{{ mso_height }}px;">
                   <v:fill type="tile" src="{{ mso_bg|default(bg_img) }}" color="{{ bg_color }}" />
@@ -316,7 +316,7 @@
             </td>
           </tr>
         </table>
-        {% if bg_img and defined and bg_img|trim != "" and mso_support == true %}
+        {% if bg_img and mso_support == true %}
           <!--[if gte mso 9]>
             </v:textbox>
           </v:rect>

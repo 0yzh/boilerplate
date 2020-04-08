@@ -2,9 +2,6 @@
 
 {# set image server #}
 {%- set gum = "https://services.google.com/fh/files/emails/" -%}
-{%- set img_hero = gum ~ "floral_preorder_mod1_hero_720x280_2x_factor_revision.png" -%}
-{%- set m1_img = gum ~ "pixel_holiday_shopping_m1_hero_720x440_2x.jpg" -%}
-{%- set img_spacer = gum ~ "spacer.png" -%}
 
 {# import macro library base #}
 {%- import 'partial/macro_base.html' as base with context %}
@@ -13,7 +10,7 @@
 
 {# Note: Remove this SET and FOR loop if you are not using mod library macros for your build #}  
   {% set contents = [
-      
+    
   ] %}
 
   {% for content in contents %}
