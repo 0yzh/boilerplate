@@ -10,34 +10,14 @@
 {%- import 'partial/macro_base.html' as base with context %}
 
 {%- block email_partials %}
-  <tr>
-    <td class="m-1 container" background="{{ img_hero }}">
-      <table class="container">
-        {{ base.spacer(25) }}
-        {{ base.text(copy.mod1_headline, element="h1", class="bold") }}
-        {{ base.spacer(14) }}
-        {{ base.text(copy.mod1_subhead) }}
-        {{ base.spacer(25) }}
-      </table>
-    </td>
-  </tr>
-  {{ base.spacer(20)}}
-  <tr>
-    <td class="footer container" background="">
-      <table class="container">
-        {{ base.spacer(25) }}
-        {{ base.text(copy.hats_headline, element="h1", class="bold") }}
-        {{ base.spacer(14) }}
-        {% for item in copy.disclaimer %}
-          {{ base.text(item, element="h5") }}<br />
-          {{ base.spacer(10) }}
-        {% endfor %}
-        {{ base.spacer(14) }}
-        {{ base.text(copy.google_address, element="h5") }}
-        {{ base.spacer(14) }}
-        {{ base.text(copy.optout, element="h5") }}
-        {{ base.spacer(25) }}
-      </table>
-    </td>
-  </tr>
+
+{# Note: Remove this SET and FOR loop if you are not using mod library macros for your build #}  
+  {% set contents = [
+      
+  ] %}
+
+  {% for content in contents %}
+    {{ content }}
+  {% endfor %}
+
 {%- endblock %}
