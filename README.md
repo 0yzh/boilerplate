@@ -58,7 +58,7 @@ Calling the macro:
 ```jinja
 {{ base.spacer(25) }}
 ```
-**Note:** We are using the "with context" option on import to access the global scope for environment variables such as env.language.short_name or env.content_type
+**Note:** We are using the "with context" option on import to access the global scope for environment variables such as env.language.short_name and env.content_type.
 
 ## Adding and using body copy
 
