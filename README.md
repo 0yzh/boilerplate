@@ -52,7 +52,7 @@ Layouts can be found in `src/layout` which contains `base_layout.html` and `subl
 
 You can add macros to the `partial/macro_base.html` file and import them into `src/index.html` as normal:
 ```jinja
-{% import "partial/macro_base" as base %}
+{% import "partial/macro_base.html" as base %}
 ```
 Calling the macro:
 ```jinja
