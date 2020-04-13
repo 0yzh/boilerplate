@@ -98,10 +98,10 @@ You would call each copy like this:
 
 ## Dev commands (npm scripts)
 
-| Prefix        |    Command    | Description  |
-| ------------- | ------------- | ------------ |
+|    Prefix      |    Command    | Description  |
+| ----------- | ------------- | ------------ |
 | npm         | `install`     | Installs project dependencies |
-| npm run     | `dev`         | Watches for file changes in development HTML and LESS files and runs `npm run build` on save |
+| npm&nbsp;run     | `dev`         | Watches for file changes in development HTML and LESS files and runs `npm run build` on save |
 | npm run     | `build`       | Manually run the gulp tasks 'build-html' and 'build-pt' and 'compile'  |
 | npm run     | `compile`     | Compiles final HTML data for GAMMA |
 | npm run     | `export`      | Creates a zip archive for GAMMA upload |
