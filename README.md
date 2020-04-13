@@ -41,7 +41,7 @@ Once the build process is complete there will be two new subfolders created in t
 
 - `stage` contains the compiled nunjucks and LESS->CSS files.
 
-- `build` contains the final HTML with rendered nunjucks data and inlined CSS / -premailer styles: `boilerplate/src/build/index.html`. **This is the HTML code you will copy and paste into your Gamma message.**
+- `build` contains the final HTML with rendered nunjucks data and inlined CSS / -premailer styles: `boilerplate/src/build/index.html`. **This is the HTML code you will copy and paste into your campaign message.**
 
 ## Using layouts and partials
 
@@ -103,8 +103,8 @@ You would call each copy like this:
 | npm         | `install`     | Installs project dependencies |
 | npm&nbsp;run     | `dev`         | Watches for file changes in development HTML and LESS files and runs `npm run build` on save |
 | npm run     | `build`       | Manually run the gulp tasks 'build-html' and 'build-pt' and 'compile'  |
-| npm run     | `compile`     | Compiles final HTML data for GAMMA |
-| npm run     | `export`      | Creates a zip archive for GAMMA upload |
+| npm run     | `compile`     | Compiles final HTML data  |
+| npm run     | `export`      | Creates a zip archive for upload |
 | gulp        | `export`      | Alternative for `npm run export` |
 
 
